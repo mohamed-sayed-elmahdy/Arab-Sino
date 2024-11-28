@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar-container">
+        <!-- Left Section: Logos -->
+        <a class="logo-section" href="/">
+          <img src="/images/arab-sino.png" alt="Arab Sino Logo" class="logo" />
+        </a>
+
+        <!-- Center Section: Links -->
+        <nav class="nav-links">
+          <ul>
+            <button class="close-menu" id="close-menu">
+              <i class="fas fa-times"></i>
+            </button>
+            <li><a href="#">About Us</a></li>
+            <li class="dropdown">
+              <a href="#">Products</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Product 1</a></li>
+                <li><a href="#">Product 2</a></li>
+                <li><a href="#">Product 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">News & Events</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <!-- Right Section: Secondary Logo -->
+        <div class="logo-section Secondary">
+          <img
+            src="/images/sany-logo.png"
+            alt="Sany Logo"
+            class="Secondarylogo"
+          />
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+      </div>
+    </header>
+    <section class="about-section">
+      <div class="overlay"></div>
+      <div class="content">
+        <h1>About SANY</h1>
+        <p class="aboutParagraph">
+          Since 1989, SANY's vision to build a first-class enterprise, to foster
+          first-class employees, and to make first-class contributions to
+          society has never wavered.
+        </p>
+        <div class="buttons">
+          <button class="contact-btn">Contact Us</button>
+          <div class="emergency">
+            <span class="icon"><i class="fa-solid fa-phone"></i></span>
+            <div>
+              <p>24H Emergency</p>
+              <p>+962 6 5657 223</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="social-links">
+        <div class="socialConatiner">
+          <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <a href="#" class="whatsapp" title="WhatsApp"
+          ><i class="fab fa-whatsapp"></i> Contact us</a
+        >
+      </div>
+    </section>
+    <section class="sany-section">
+      <div class="sany-container">
+        <div class="sany-video">
+          <img
+            src="/images/factory-image.png"
+            alt="SANY Factory"
+            class="video-thumbnail"
+          />
+          <div class="play-button"><i class="fa-solid fa-play"></i></div>
+          <div class="overlay"></div>
+        </div>
+        <div class="sany-content">
+          <h2>
+            SANY With <br />
+            Future Technology
+          </h2>
+          <p>
+            We have focused on delivering value to customers, employees,
+            shareholders, and the public by offering high-quality products and
+            services.
+          </p>
+          <a href="#" class="btn-red">Know more</a>
+        </div>
+      </div>
+    </section>
+    <section class="products-Section">
+      <header>
+        <h2 class="section-label">Our products</h2>
+        <h1>We offer the best experience with our rental deals</h1>
+      </header>
+
+      <nav class="tabs">
+        <button class="tab active">Truck</button>
+        <button class="tab">Crane</button>
+        <button class="tab">Port Machinery</button>
+        <button class="tab">Excavator</button>
+        <button class="tab">Piling Machinery</button>
+        <button class="tab">Road Machinery</button>
+      </nav>
+
+      <div class="product-grid">
+        <div class="card">
+          <h3>Off-Highway Mining Truck</h3>
+          <a class="model" href="/">SRT55D-VSRT550DRT95C</a>
+          <img
+            src="/images/car.png"
+            alt="Off-Highway Mining Truck"
+            class="product-image"
+          />
+          <ul class="product-details">
+        <div class="clockAndtrend">
+              <li><i class="fa-regular fa-clock"></i>55 - 95T</li>
+              <li><i class="fa-solid fa-arrow-trend-up"></i>3260 - 4629NM</li>
+        </div>
+           
+           <div class="gas-pump">
+             <li><i class="fa-solid fa-gas-pump"></i>565 - 783kW</li>
+           </div>
+          </ul>
+          <button class="arrow-button">→</button>
+        </div>
+        <div class="card">
+          <h3>Off-Highway Mining Truck</h3>
+          <a class="model" href="/">SRT55D-VSRT550DRT95C</a>
+          <img
+            src="/images/car.png"
+            alt="Off-Highway Mining Truck"
+            class="product-image"
+          />
+          <ul class="product-details">
+        <div class="clockAndtrend">
+              <li><i class="fa-regular fa-clock"></i>55 - 95T</li>
+              <li><i class="fa-solid fa-arrow-trend-up"></i>3260 - 4629NM</li>
+        </div>
+           
+           <div class="gas-pump">
+             <li><i class="fa-solid fa-gas-pump"></i>565 - 783kW</li>
+           </div>
+          </ul>
+          <button class="arrow-button">→</button>
+        </div>
+        <div class="card">
+          <h3>Off-Highway Mining Truck</h3>
+          <a class="model" href="/">SRT55D-VSRT550DRT95C</a>
+          <img
+            src="/images/car.png"
+            alt="Off-Highway Mining Truck"
+            class="product-image"
+          />
+          <ul class="product-details">
+        <div class="clockAndtrend">
+              <li><i class="fa-regular fa-clock"></i>55 - 95T</li>
+              <li><i class="fa-solid fa-arrow-trend-up"></i>3260 - 4629NM</li>
+        </div>
+           
+           <div class="gas-pump">
+             <li><i class="fa-solid fa-gas-pump"></i>565 - 783kW</li>
+           </div>
+          </ul>
+          <button class="arrow-button">→</button>
+        </div>
+        <div class="card">
+          <h3>Off-Highway Mining Truck</h3>
+          <a class="model" href="/">SRT55D-VSRT550DRT95C</a>
+          <img
+            src="/images/car.png"
+            alt="Off-Highway Mining Truck"
+            class="product-image"
+          />
+          <ul class="product-details">
+        <div class="clockAndtrend">
+              <li><i class="fa-regular fa-clock"></i>55 - 95T</li>
+              <li><i class="fa-solid fa-arrow-trend-up"></i>3260 - 4629NM</li>
+        </div>
+           
+           <div class="gas-pump">
+             <li><i class="fa-solid fa-gas-pump"></i>565 - 783kW</li>
+           </div>
+          </ul>
+          <button class="arrow-button">→</button>
+        </div>
+        <div class="card">
+          <h3>Off-Highway Mining Truck</h3>
+          <a class="model" href="/">SRT55D-VSRT550DRT95C</a>
+          <img
+            src="/images/car.png"
+            alt="Off-Highway Mining Truck"
+            class="product-image"
+          />
+          <ul class="product-details">
+        <div class="clockAndtrend">
+              <li><i class="fa-regular fa-clock"></i>55 - 95T</li>
+              <li><i class="fa-solid fa-arrow-trend-up"></i>3260 - 4629NM</li>
+        </div>
+           
+           <div class="gas-pump">
+             <li><i class="fa-solid fa-gas-pump"></i>565 - 783kW</li>
+           </div>
+          </ul>
+          <button class="arrow-button">→</button>
+        </div>
+        <div class="card">
+          <h3>Off-Highway Mining Truck</h3>
+          <a class="model" href="/">SRT55D-VSRT550DRT95C</a>
+          <img
+            src="/images/car.png"
+            alt="Off-Highway Mining Truck"
+            class="product-image"
+          />
+          <ul class="product-details">
+        <div class="clockAndtrend">
+              <li><i class="fa-regular fa-clock"></i>55 - 95T</li>
+              <li><i class="fa-solid fa-arrow-trend-up"></i>3260 - 4629NM</li>
+        </div>
+           
+           <div class="gas-pump">
+             <li><i class="fa-solid fa-gas-pump"></i>565 - 783kW</li>
+           </div>
+          </ul>
+          <button class="arrow-button">→</button>
+        </div>
+        <div class="card">
+          <h3>Off-Highway Mining Truck</h3>
+          <a class="model" href="/">SRT55D-VSRT550DRT95C</a>
+          <img
+            src="/images/car.png"
+            alt="Off-Highway Mining Truck"
+            class="product-image"
+          />
+          <ul class="product-details">
+        <div class="clockAndtrend">
+              <li><i class="fa-regular fa-clock"></i>55 - 95T</li>
+              <li><i class="fa-solid fa-arrow-trend-up"></i>3260 - 4629NM</li>
+        </div>
+           
+           <div class="gas-pump">
+             <li><i class="fa-solid fa-gas-pump"></i>565 - 783kW</li>
+           </div>
+          </ul>
+          <button class="arrow-button">→</button>
+        </div>
+        <div class="card">
+          <h3>Off-Highway Mining Truck</h3>
+          <a class="model" href="/">SRT55D-VSRT550DRT95C</a>
+          <img
+            src="/images/car.png"
+            alt="Off-Highway Mining Truck"
+            class="product-image"
+          />
+          <ul class="product-details">
+        <div class="clockAndtrend">
+              <li><i class="fa-regular fa-clock"></i>55 - 95T</li>
+              <li><i class="fa-solid fa-arrow-trend-up"></i>3260 - 4629NM</li>
+        </div>
+           
+           <div class="gas-pump">
+             <li><i class="fa-solid fa-gas-pump"></i>565 - 783kW</li>
+           </div>
+          </ul>
+          <button class="arrow-button">→</button>
+        </div>
+      </div>
+
+      <footer>
+        <button class="all-products">All Products</button>
+      </footer>
+    </section>
+    <section class="stats-container">
+      <div class="stats-content">
+        <div class="stat-item">
+          <span class="stat-value">43%</span>
+          <p>International Sales grew</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">47%</span>
+          <p>of total Company Sales</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">55%</span>
+          <p>Sales in China</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">5.8 B</span>
+          <p>International Sales</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">20+</span>
+          <p>Years of technology</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">80%</span>
+          <p>International Sales grew</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">33</span>
+          <p>International Sales grew</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">33</span>
+          <p>International Sales grew</p>
+        </div>
+      </div>
+      <div class="stats-map">
+        <img src="/images/mapgrey.jpeg" alt="Map" />
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
