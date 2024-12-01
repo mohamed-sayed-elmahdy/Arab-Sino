@@ -608,7 +608,7 @@ body {
   max-width: 1300px;
   margin: 0 auto;
 }
-.section-label {
+.news-section .section-label {
   text-align: center;
   justify-self: center;
   color: #e62129;
@@ -619,14 +619,14 @@ body {
   border-radius: 10px;
   font-size: 1.2rem;
 }
-.news-section header > h1 {
+.news-section .news-section header > h1 {
   font-size: 34px;
   margin: 1.5rem auto 2.5rem;
   max-width: 700px;
   text-align: center;
   font-weight: 500;
 }
-.news-container {
+.news-section .news-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -635,7 +635,7 @@ body {
   gap: 30px;
 }
 
-.card-news {
+.news-section .card-news {
   background-color: #ffffff;
   border-radius: 16px;
   overflow: hidden;
@@ -646,14 +646,14 @@ body {
   transition: transform 0.3s ease;
 }
 
-.card-news-image img {
+.news-section .card-news-image img {
   width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 12px;
 }
 
-.card-news-content {
+.news-section .card-news-content {
   padding: 14px;
   padding-left: 3px;
   display: flex;
@@ -662,7 +662,7 @@ body {
   align-items: flex-start;
 }
 
-.card-news-tag {
+.news-section .card-news-tag {
   display: inline-block;
   background-color: #ff3c3c;
   color: #ffffff;
@@ -673,20 +673,20 @@ body {
   margin-bottom: 0px;
 }
 
-.card-news-title {
+.news-section .card-news-title {
   font-size: 18px;
   font-weight: bold;
   margin: 8px 0;
   color: #1a1a1a;
 }
 
-.card-news-description {
+.news-section .card-news-description {
   font-size: 14px;
   color: #666666;
   margin-bottom: 12px;
 }
 
-.card-news-link {
+.news-section .card-news-link {
   text-decoration: none;
   font-size: 14px;
   font-weight: bold;
@@ -694,7 +694,7 @@ body {
   transition: color 0.3s;
 }
 
-.card-news-link:hover {
+.news-section .card-news-link:hover {
   color: #b02335;
 }
 
