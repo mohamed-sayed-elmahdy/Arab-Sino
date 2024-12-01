@@ -130,7 +130,7 @@ body {
 .about-section {
   position: relative;
   min-height: 90vh;
-  background: url("/images/homeImage.jpeg") no-repeat center/cover;
+  background: url("images/homeImage.jpeg") no-repeat center/cover;
   display: flex;
   align-items: center;
   justify-content: space-between;
