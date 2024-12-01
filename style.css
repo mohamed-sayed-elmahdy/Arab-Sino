@@ -909,11 +909,11 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   .news-section .news-card img,
-  .news-section  .card-news img {
+  .news-section .card-news img {
     display: none;
   }
 
-  .news-section  .news-card,
+  .news-section .news-card,
   .news-section .card-news {
     padding-left: 5px;
     max-width: 500px;
@@ -925,7 +925,7 @@ body {
     margin-top: 5px;
     order: 3;
   }
-  .news-section  .news-card .content h2,
+  .news-section .news-card .content h2,
   .news-section .card-news .card-news-content h2 {
     font-size: 19px;
   }
