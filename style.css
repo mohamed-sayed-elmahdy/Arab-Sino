@@ -698,7 +698,7 @@ body {
   color: #b02335;
 }
 
-.news-container .columnNews {
+.news-section .news-container .columnNews {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -707,7 +707,7 @@ body {
   gap: 25px;
 }
 
-.news-card {
+.news-section .news-card {
   background: #fff;
   border-radius: 12px;
   overflow: hidden;
@@ -720,12 +720,12 @@ body {
   gap: 5px;
 }
 
-.news-card:hover,
-.card-news:hover {
+.news-section .news-card:hover,
+.news-section .card-news:hover {
   transform: translateY(-10px);
 }
 
-.news-card img {
+.news-section .news-card img {
   width: 100%;
   max-width: 250px;
   max-height: auto;
@@ -733,7 +733,7 @@ body {
   border-radius: 12px;
 }
 
-.news-card .content {
+.news-section .news-card .content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -741,21 +741,21 @@ body {
   padding: 10px;
 }
 
-.news-card .content h2 {
+.news-section .news-card .content h2 {
   font-size: 20px;
   color: #212529;
   margin-bottom: 10px;
   font-weight: 700;
 }
 
-.news-card .content p {
+.news-section .news-card .content p {
   font-size: 1rem;
   color: #6c757d;
   margin-bottom: 5px;
   line-height: 22px;
 }
 
-.news-card .content .tag {
+.news-section .news-card .content .tag {
   position: absolute;
   bottom: 20px;
   right: 410px;
@@ -904,38 +904,38 @@ body {
   /* new section */
 }
 @media (max-width: 670px) {
-  .news-card,
-  .card-news {
+  .news-section .news-card,
+  .news-section.card-news {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
-  .news-card img,
-  .card-news img {
+  .news-section .news-card img,
+  .news-section  .card-news img {
     display: none;
   }
 
-  .news-card,
-  .card-news {
+  .news-section  .news-card,
+  .news-section .card-news {
     padding-left: 5px;
     max-width: 500px;
   }
   .card-news .card-news-content {
     padding-left: 10px;
   }
-  .card-news .card-news-content .card-news-tag {
+  .news-section .card-news .card-news-content .card-news-tag {
     margin-top: 5px;
     order: 3;
   }
-  .news-card .content h2,
-  .card-news .card-news-content h2 {
+  .news-section  .news-card .content h2,
+  .news-section .card-news .card-news-content h2 {
     font-size: 19px;
   }
 
-  .news-card .content p,
-  .card-news .card-news-content p {
+  .news-section .news-card .content p,
+  .news-section .card-news .card-news-content p {
     display: none;
   }
 
-  .news-card .content .tag {
+  .news-section .news-card .content .tag {
     position: initial;
     align-self: flex-start;
     margin-top: 10px;
