@@ -619,7 +619,7 @@ body {
   border-radius: 10px;
   font-size: 1.2rem;
 }
-.news-section header > h1 {
+.news-section header  h1 {
   font-size: 34px;
   margin: 1.5rem auto 2.5rem;
   max-width: 700px;
