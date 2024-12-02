@@ -39,7 +39,7 @@ body {
 .Secondarylogo {
   height: 45px;
 }
-.nav-links ul {
+.navbar .navbar-container .nav-links .linksList {
   display: flex;
   list-style: none;
   gap: 20px;
@@ -54,15 +54,113 @@ body {
 .dropdown .dropdown-menu {
   display: none;
   position: absolute;
-  top: 100%; /* Aligns it below the Products link */
-  left: 0;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%);
   background-color: #fff;
   border: 1px solid #ddd;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   list-style: none;
-  padding: 10px 0;
-  min-width: 150px;
+  padding: 0px;
   z-index: 1000;
+  grid-template-columns: 280px 420px 230px;
+  gap: 40px;
+}
+
+/* Sidebar */
+.dropdown .dropdown-menu .sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 2.5rem 0 2.5rem 2rem;
+}
+.dropdown .dropdown-menu .sidebar .category {
+  background: white;
+  border: 1px solid #ddd;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  transition: 0.3s;
+  border-radius: 6px;
+}
+.dropdown .dropdown-menu .sidebar .category img {
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+}
+.dropdown .dropdown-menu .sidebar .category span {
+  padding: 15px 0;
+}
+.dropdown .dropdown-menu .sidebar .category span i {
+  margin-right: 10px;
+}
+.dropdown .dropdown-menu .sidebar .category:hover,
+.dropdown .dropdown-menu .sidebar .category.active {
+  background: #e74c3c;
+  color: white;
+}
+
+.dropdown .dropdown-menu .product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Ensures exactly two columns */
+  gap: 15px; /* Space between grid items */
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown .dropdown-menu .product-grid .product {
+  text-align: center;
+  font-size: 14px;
+}
+
+.dropdown .dropdown-menu .product-grid   .product img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+/* Right Navigation */
+.dropdown .dropdown-menu .right-nav {
+  background: #fdf1f1;
+  padding: 10px;
+padding-left: 0;
+ 
+}
+
+.dropdown .dropdown-menu .right-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 3rem;
+  gap: 5px;
+  padding: 0;
+  
+}
+
+.right-nav li {
+border-bottom: 1px solid white;
+width: 100%;
+padding-left: 2px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+.right-nav a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
+  transition: 0.3s;
+}
+
+.right-nav a:hover {
+  color: #e74c3c;
 }
 
 .dropdown-menu li {
@@ -83,7 +181,7 @@ body {
 
 /* Show Dropdown Menu on Hover */
 .dropdown:hover .dropdown-menu {
-  display: block;
+  display: grid;
 }
 
 .nav-links a {
@@ -619,7 +717,7 @@ body {
   border-radius: 10px;
   font-size: 1.2rem;
 }
-.news-section header  h1 {
+.news-section header h1 {
   font-size: 34px;
   margin: 1.5rem auto 2.5rem;
   max-width: 700px;
@@ -782,6 +880,9 @@ body {
   }
   .about-section .content {
     margin-left: 0rem;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: none;
   }
 }
 /* Mobile View */
