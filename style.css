@@ -897,7 +897,7 @@ align-items: center;
   }
 }
 @media (max-width: 768px) {
-  .nav-links ul {
+  .navbar .navbar-container .nav-links .linksList {
     display: none;
     flex-direction: column;
     background-color: #fff;
@@ -915,7 +915,7 @@ align-items: center;
     border-radius: 25px;
   }
 
-  .nav-links ul.show {
+  .navbar .navbar-container .nav-links .linksList.show {
     display: flex;
   }
 
