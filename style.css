@@ -220,7 +220,7 @@ body {
   font-size: 1.1rem;
 }
 .navbar .navbar-container .mobile-dropdown {
-  /* max-height: 0; */
+  max-height: 0;
   /* opacity: 0; */
   /* visibility: hidden; */
   overflow: hidden;
