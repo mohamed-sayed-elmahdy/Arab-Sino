@@ -913,11 +913,26 @@ body {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease-in-out;
+    
   }
 
   .navbar .navbar-container .mobile-dropdown.open {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
     max-height: 200px;
+    margin-top: 6px;
+    transition: 0.4s ease-in all;
+
+  }
+  .navbar .navbar-container .mobile-dropdown.open ul  {
+    list-style: none;
+    transition: 0.4s ease-in all;
+  }
+  .navbar .navbar-container .mobile-dropdown.open ul li {
+    padding: 6px;
+    transition: 0.4s ease-in all;
   }
 
   .navbar .navbar-container .dropdown a {
